@@ -23,6 +23,7 @@ ___
 - Prettier
 - React i18n
 - React Native Config
+- React Native SVG
 - React Navigation
 - Redux Toolkit
 - RTK Query
