@@ -7,7 +7,7 @@
         "android-build:prod": "cd android && ./gradlew assembleProduction",
         "android-build:staging": "cd android && ./gradlew assembleStaging",
         "android:local-release": "react-native run-android --variant=localrelease --appIdSuffix=local",
-        "android:local": "react-native run-android --variant=developmentdebug --appIdSuffix=local",
+        "android:local": "react-native run-android --variant=localdebug --appIdSuffix=local",
         "android:prod-release": "react-native run-android --variant=productionrelease",
         "android:prod": "react-native run-android --variant=productiondebug",
         "android:staging-release": "react-native run-android --variant=stagingrelease --appIdSuffix=staging",
