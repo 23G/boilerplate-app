@@ -1,0 +1,8 @@
+{
+    "name": "boilerplate-app",
+    "version": "0.0.1",
+    "description": "A template for new React Native apps.",
+    "repository": "git@github.com:23g/boilerplate-app.git",
+    "author": "Tycho Polet <tycho@23g.nl>",
+    "license": "MIT"
+}
