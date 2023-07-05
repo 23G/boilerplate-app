@@ -10,3 +10,16 @@ declare module '*.png' {
     const value: number | FastImageProps.Source;
     export default value;
 }
+
+declare module 'react-native-config' {
+    import Config from 'react-native-config';
+
+    interface NativeConfig {
+        API_URL: string;
+        ENV: import('@/types/environment').Environment;
+    }
+
+    const ReactNativeConfig: NativeConfig = Config;
+
+    export default ReactNativeConfig;
+}
