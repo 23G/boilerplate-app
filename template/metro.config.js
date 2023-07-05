@@ -6,26 +6,26 @@
  */
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const {getDefaultConfig} = require('metro-config');
+const { getDefaultConfig } = require('metro-config');
 
 module.exports = (async () => {
-  const {
-    resolver: {sourceExts, assetExts},
-  } = await getDefaultConfig();
+    const {
+        resolver: { sourceExts, assetExts },
+    } = await getDefaultConfig();
 
-  return {
-    transformer: {
-      getTransformOptions: async () => ({
-        transform: {
-          experimentalImportSupport: false,
-          inlineRequires: true,
+    return {
+        transformer: {
+            getTransformOptions: async () => ({
+                transform: {
+                    experimentalImportSupport: false,
+                    inlineRequires: true,
+                },
+            }),
+            babelTransformerPath: require.resolve('react-native-svg-transformer'),
         },
-      }),
-      babelTransformerPath: require.resolve('react-native-svg-transformer'),
-    },
-    resolver: {
-      assetExts: assetExts.filter(ext => ext !== 'svg'),
-      sourceExts: [...sourceExts, 'svg', 'jsx', 'js', 'tsx', 'ts'],
-    },
-  };
+        resolver: {
+            assetExts: assetExts.filter((ext) => ext !== 'svg'),
+            sourceExts: [...sourceExts, 'svg', 'jsx', 'js', 'tsx', 'ts'],
+        },
+    };
 })();
