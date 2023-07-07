@@ -1,4 +1,4 @@
-const pluginSortImports = require('@ianvs/prettier-plugin-sort-imports');
+const pluginSortImports = require('@trivago/prettier-plugin-sort-imports');
 
 module.exports = {
     arrowParens: 'always',
@@ -7,7 +7,7 @@ module.exports = {
     tabWidth: 4,
     trailingComma: 'all',
     plugins: [pluginSortImports],
-    importOrder: ['<THIRD_PARTY_MODULES>', '', '^@/(.*)$', '', '^[./]'],
+    importOrder: ['^@/(.*)$', '^[./]'],
     importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],
     importOrderSeparation: true,
     importOrderMergeDuplicateImports: true,
