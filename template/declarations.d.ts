@@ -22,7 +22,7 @@ declare module 'react-native-config' {
 
     interface NativeConfig {
         API_URL: string;
-        ENV: Environment,
+        ENV: Environment;
     }
 
     const ReactNativeConfig: NativeConfig = Config;
