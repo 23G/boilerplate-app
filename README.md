@@ -31,7 +31,7 @@ Follow [this guide](https://reactnative.dev/docs/environment-setup) to setup the
 Create a new React Native project using this template:
 
 ```
-npx react-native init <ProjectName> --npm --template https://github.com/23g/boilerplate-app
+npx react-native init <ProjectName> --pm npm --template https://github.com/23g/boilerplate-app
 ```
 
 In the project root, create `.env` files representing the different environments:
